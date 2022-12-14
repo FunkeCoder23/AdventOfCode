@@ -1,0 +1,29 @@
+DEBUG = True
+
+def dprint(msg):
+    if DEBUG:
+        print(msg)
+
+
+def chunks(l, n):
+    for i in range(0, len(l), n):
+        yield l[i:i + n]
+
+
+def getInput():
+    if DEBUG:
+        file = "test_input"
+    else:
+        file = "input"
+
+    with open(file, "r") as f:
+        lines = f.read()
+        return lines.splitlines()
+
+
+def advent():
+    inp = getInput()
+    pass
+
+
+advent()

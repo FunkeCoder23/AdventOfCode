@@ -1,1 +1,7 @@
 sessionID
+venv/
+.replit/
+.breakpoints
+replit.nix
+.upm/
+poetry.lock
